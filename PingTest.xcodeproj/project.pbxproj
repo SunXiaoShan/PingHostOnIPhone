@@ -14,6 +14,12 @@
 		8F996A8120CA29A1001D536F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F996A7F20CA29A1001D536F /* LaunchScreen.storyboard */; };
 		8F996A8420CA29A1001D536F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F996A8320CA29A1001D536F /* main.m */; };
 		8F996A8E20CA29A1001D536F /* PingTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F996A8D20CA29A1001D536F /* PingTestTests.m */; };
+		8F996AA120CA2A84001D536F /* PingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F996A9C20CA2A84001D536F /* PingItem.m */; };
+		8F996AA220CA2A84001D536F /* PingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F996A9C20CA2A84001D536F /* PingItem.m */; };
+		8F996AA320CA2A84001D536F /* PingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F996A9E20CA2A84001D536F /* PingService.m */; };
+		8F996AA420CA2A84001D536F /* PingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F996A9E20CA2A84001D536F /* PingService.m */; };
+		8F996AA520CA2A84001D536F /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F996A9F20CA2A84001D536F /* SimplePing.m */; };
+		8F996AA620CA2A84001D536F /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F996A9F20CA2A84001D536F /* SimplePing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,13 @@
 		8F996A8920CA29A1001D536F /* PingTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F996A8D20CA29A1001D536F /* PingTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PingTestTests.m; sourceTree = "<group>"; };
 		8F996A8F20CA29A1001D536F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F996A9A20CA2A84001D536F /* PingDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PingDefine.h; path = Ping/PingDefine.h; sourceTree = "<group>"; };
+		8F996A9B20CA2A84001D536F /* PingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PingService.h; path = Ping/PingService.h; sourceTree = "<group>"; };
+		8F996A9C20CA2A84001D536F /* PingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PingItem.m; path = Ping/PingItem.m; sourceTree = "<group>"; };
+		8F996A9D20CA2A84001D536F /* PingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PingItem.h; path = Ping/PingItem.h; sourceTree = "<group>"; };
+		8F996A9E20CA2A84001D536F /* PingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PingService.m; path = Ping/PingService.m; sourceTree = "<group>"; };
+		8F996A9F20CA2A84001D536F /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SimplePing.m; path = Ping/SimplePing.m; sourceTree = "<group>"; };
+		8F996AA020CA2A84001D536F /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SimplePing.h; path = Ping/SimplePing.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +76,7 @@
 		8F996A6820CA29A1001D536F = {
 			isa = PBXGroup;
 			children = (
+				8F996A9920CA2A54001D536F /* Service */,
 				8F996A7320CA29A1001D536F /* PingTest */,
 				8F996A8C20CA29A1001D536F /* PingTestTests */,
 				8F996A7220CA29A1001D536F /* Products */,
@@ -101,6 +115,20 @@
 				8F996A8F20CA29A1001D536F /* Info.plist */,
 			);
 			path = PingTestTests;
+			sourceTree = "<group>";
+		};
+		8F996A9920CA2A54001D536F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8F996A9A20CA2A84001D536F /* PingDefine.h */,
+				8F996A9D20CA2A84001D536F /* PingItem.h */,
+				8F996A9C20CA2A84001D536F /* PingItem.m */,
+				8F996A9B20CA2A84001D536F /* PingService.h */,
+				8F996A9E20CA2A84001D536F /* PingService.m */,
+				8F996AA020CA2A84001D536F /* SimplePing.h */,
+				8F996A9F20CA2A84001D536F /* SimplePing.m */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F996A7920CA29A1001D536F /* ViewController.m in Sources */,
+				8F996AA320CA2A84001D536F /* PingService.m in Sources */,
 				8F996A8420CA29A1001D536F /* main.m in Sources */,
+				8F996AA520CA2A84001D536F /* SimplePing.m in Sources */,
+				8F996AA120CA2A84001D536F /* PingItem.m in Sources */,
 				8F996A7620CA29A1001D536F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F996AA220CA2A84001D536F /* PingItem.m in Sources */,
 				8F996A8E20CA29A1001D536F /* PingTestTests.m in Sources */,
+				8F996AA420CA2A84001D536F /* PingService.m in Sources */,
+				8F996AA620CA2A84001D536F /* SimplePing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +398,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXTP59538K;
 				INFOPLIST_FILE = PingTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,6 +416,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YXTP59538K;
 				INFOPLIST_FILE = PingTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
